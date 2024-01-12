@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f7f6ee;
+    color: #38414c;
+    text-shadow: none;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    max-width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 9vw;
+}
+.top-head{
+    display: flex;
+    align-items: center;
+}
+.top-head #s1{
+    font-size: 5.5vh; 
+    font-family: "Gilroy Light";
+    font-weight: 900;
+}
+.top-head #s2{
+    font-size: 5.5vh;
+    font-family: "Gilroy Light";
+    font-weight: 400;
+}
+nav ul{
+    display: flex;
+    gap: 4vw;
+    font-weight: 500;
+}
+nav ul li{
+    list-style: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+
+.heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+    max-height: 60vh;
+    padding: 5vw 20vw;
+    font-family: Libre Baskerville,serif;
+}
+.heading h1{
+    width: 75%;
+    font-weight: 400;
+    font-size: 4vw;
+}
+.heading h5{
+    width:70%;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+button{
+    width: 10vw;
+    border-radius: 40px;
+    padding: 0.7vw 2vw;
+    font-size: 1.4vw;
+    font-family:  Montserrat,sans-serif;
+    border: none;
+    color: #fff;
+    background-color: #232323;
+    border-radius: 60px;
+    margin-top: 10px;
+}
+
+.banner{
+    width: 100;
+    height: auto;
+}
+.banner img{
+        max-width: 100%;
+        height: auto;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+}
+
+footer{
+    width: 100%;
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    padding: 7vw 13vw 5vw;
+}
+.images{
+    width: 100%;
+    height: 40;
+}
+.images svg{
+    width: 100%;
+    height: 7vw;
+}
+.menu-bar{
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+.manu-bar-1{
+    width: 20vw;
+}
+.manu-bar-1 .footer-head{
+    width: 100%;
+    display: flex;
+    font-size:1.5vw;
+}
+.manu-bar-1 .footer-head #s1{
+    font-weight: 900;
+    font-family: "Gilroy Light";
+}
+.manu-bar-1 .footer-head #s2{
+    font-weight: 400;
+    font-family: "Gilroy Light";
+}
+.manu-bar-1 p{
+    margin-top: 10px;
+}
+
+.manu-bar-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.manu-bar-2 h2{
+    font-size: 18px;
+}
+.manu-bar-2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.manu-bar-3{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.manu-bar-3 h2{
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:670px) {
+    nav ul{
+        display: none;
+    }
+
+    .heading {
+        padding: 5vw 7vw;
+        gap: 5vw;
+    }
+    .heading h1 {
+        width: 90%;
+        font-weight: 400;
+        font-size: 7vw;
+    }
+    .heading h5 {
+        width: 100%;
+        font-weight: 400;
+        font-size: 3.5vw;
+    }
+    button{
+        width: 21vw;
+        border-radius: 40px;
+        padding: 1.7vw 3vw;
+        font-size: 3.4vw;
+        font-family: Montserrat,sans-serif;
+        border: none;
+        color: #fff;
+        background-color: #232323;
+        border-radius: 60px;
+        margin-top: 10px;
+    }
+    .manu-bar-2{
+        display: none;
+    }
+    .menu-bar{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .images svg {
+        width: 100%;
+        height: 15vw;
+    }
+    .manu-bar-1{
+        width: 100%;
+    }
+    .manu-bar-1 .footer-head{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:4.5vh;
+    }
+    .manu-bar-1 .footer-head #s1{
+        font-weight: 900;
+        font-family: "Gilroy Light";
+    }
+    .manu-bar-1 .footer-head #s2{
+        font-weight: 400;
+        font-family: "Gilroy Light";
+    }
+    .manu-bar-1 p{
+        text-align: center;
+        font-size: 2.5vh;
+    }
+    .manu-bar-3{
+        text-align: center;
+        font-size: 2.5vh;
+    }
+}
